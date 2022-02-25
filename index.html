@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>audio-player</title>
+    <link rel="icon" href="./assets/icons/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="body">
+    <img src="./assets/images/lemonade.png" class="background">
+    <div class="wrapper">
+        <audio src="" class="track" preload="auto"></audio>
+        <div class="container">
+            <div class="player__thumbnail">
+                <img src="./assets/images/lemonade.png" class="player__img">
+            </div>
+            <div class="control">
+                <div class="control__keys">
+
+                    <div class="control__btn">
+                        <img src="./assets/icons/play.png" class="play-pause">
+                    </div>
+
+                    <div class="song__info">
+                        <div class="song__artist">Beyonce</div>
+                        <div class="song__title">Don't Hurt Yourself</div>
+                    </div>
+
+                    <div class="control__next-prev">
+                        <img src="./assets/icons/backward.png" class="control__prev">
+                        <img src="./assets/icons/volume_plus.png" class="control__vol-plus">
+                        <img src="./assets/icons/forward.png" class="control__next">
+                        <img src="./assets/icons/volume_minus.png" class="control__vol-minus">
+                    </div>
+                </div>
+                <div class="control__prog-bar">
+                    <div class="duration-time">3:53</div>
+                    <input type="range" class="progress-bar" min="0" max="100" value="0">
+                    <div class="current-time">0:00</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="footer__github">
+            <span>©</span><span>2022</span>
+            <a href="https://github.com/EveryBarry" class="footer__link-gh" target="_blank">GitHub</a>
+        </div>
+        <div class="footer__rs">
+            <a href="https://rs.school/js-stage0/" target="blank"><img class="rsschool__logo" src="https://rs.school/images/rs_school_js.svg" alt="RSSchool logo"></a>
+        </div>
+    </footer>
+
+    <script src="index.js"></script>
+</body>
+
+</html>

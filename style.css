@@ -1,0 +1,255 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.wrapper {
+    display: grid;
+    width: 100%;
+    height: calc(100vh - 50px);
+    margin: auto;
+}
+
+.body {
+    background: #000000;
+}
+
+.background {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    margin: 0 auto;
+    z-index: -1;
+    filter: blur(10px);
+}
+
+.container {
+    height: 300pt;
+    width: 250pt;
+    background: #000000;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #000000;
+    align-self: center;
+    justify-self: center;
+    display: grid;
+    grid-template-rows: 67% 33%;
+    overflow: hidden;
+
+}
+
+.player__img {
+    margin: auto;
+    width: 100%;
+    transition: 1s;
+    margin-top: -8%;
+}
+
+.control {
+    width: 100%;
+    height: 100%;
+    background: -webkit-linear-gradient(45deg, rgb(40, 40, 40), rgb(133, 133, 133));
+    display: grid;
+    grid-template-rows: 66% 33%;
+    z-index: 20;
+}
+
+.control__keys {
+    display: grid;
+    grid-template-columns: 20% 58% 20%;
+    align-items: center;
+    justify-items: center;
+}
+
+.control__btn {
+    align-self: center;
+    justify-self: end;
+}
+
+.play-pause {
+    height: 50px;
+    width: 50px;
+    filter: invert(1);
+    cursor: pointer;
+    transition: .3s;
+}
+
+.play-pause:hover {
+    opacity: .75;
+}
+
+.song__artist {
+    color: rgb(193, 255, 6);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.song__title {
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 17px;
+}
+
+.control__next-prev {
+    display: grid;
+    grid-template-rows: 50% 50%;
+    grid-template-columns: 50% 50%;
+    align-self: center;
+    justify-self: start;
+    gap: 2px
+}
+
+.control__next {
+    height: 30px;
+    width: 30px;
+    transition: .3s;
+    filter: invert(1);
+    cursor: pointer;
+}
+
+.control__next:hover {
+    opacity: .75;
+}
+
+.control__prev {
+    height: 30px;
+    width: 30px;
+    transition: .3s;
+    filter: invert(1);
+    cursor: pointer;
+}
+
+.control__prev:hover {
+    opacity: .75;
+}
+
+.control__vol-minus {
+    height: 30px;
+    width: 30px;
+    transition: .3s;
+    filter: invert(1);
+    cursor: pointer;
+}
+
+.control__vol-minus:hover {
+    opacity: .75;
+}
+
+.control__vol-plus {
+    height: 30px;
+    width: 30px;
+    transition: .3s;
+    filter: invert(1);
+    cursor: pointer;
+}
+
+.control__vol-plus:hover {
+    opacity: .75;
+}
+
+
+.control__prog-bar {
+    margin: auto 18%;
+    display: grid;
+    grid-template-rows: 33% 33% 33%;
+}
+
+.duration-time {
+    cursor: pointer;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 13px;
+    color: rgb(193, 255, 6);
+    align-self: center;
+    justify-self: end;
+}
+
+.progress-bar {
+    appearance: none;
+    height: 5px;
+    background: #000000;
+    width: 160pt;
+    border-radius: 30px;
+    align-self: center;
+    justify-self: center;
+    cursor: pointer;
+}
+
+.progress-bar::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    height: 10px;
+    width: 7px;
+    border: 0;
+    background: -webkit-linear-gradient(45deg, rgb(213, 213, 213), rgb(193, 255, 6));
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.current-time {
+    cursor: pointer;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 13px;
+    color: white;
+    align-self: center;
+    justify-self: start;
+}
+
+
+.footer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    width: 50%;
+    height: 5vh;
+    background-color: #000000;
+    margin: 0 auto;
+    opacity: 0.3;
+    border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+    .footer {
+        width: 250pt;
+        height: 10vh;
+    }
+}
+
+.footer__github {
+    display: grid;
+    justify-content: start;
+    grid-template-columns: auto auto auto;
+    gap: 10px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    width: 50%;
+    color: #FFFFFF;
+    align-self: center;
+    justify-self: center;
+}
+
+.footer__github a {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.footer__rs {
+    align-self: center;
+    justify-self: center;
+    height: 80%;
+}
+
+.footer__rs a {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.rsschool__logo {
+    height: 100%;
+    background-color: #FFFFFF;
+}
