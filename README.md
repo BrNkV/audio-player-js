@@ -5,4 +5,4 @@
 Каждому музыкальному треку соответствует определённое фоновое изображение.
 
 ## view project link
-https://everybarry.github.io/audio-player-js/
+https://brnkv.github.io/audio-player-js/
